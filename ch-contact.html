@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- HEAD SECTION -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+   <title>Contect us</title>
+    <!--GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--BOOTSTRAP MAIN STYLES -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!--FONTAWESOME MAIN STYLE -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+    <!--END HEAD SECTION -->
+<body>   
+     <!-- NAV SECTION -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1 class="style1"><img src="images/logo.png" alt="" width="240" height="36" /></h1>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="current_page_item"><a href="ch-index.html">首頁</a></li>
+      <li><a href="ch-about.html">公司介紹</a></li>
+      <li><a href="ch-porfolio.html">服務</a></li>
+            <li><a href="ch-product.html">產品</a></li>
+      <li><a href="ch-contact.html">連絡我們</a></li>
+      <li class="last"><a href="index.html">English</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+     
+   <!--CONTACT SECTION -->
+    <div id="contact-section">
+        <div class="container" >
+            <div class="row main-top-margin text-center">
+                <div class="col-md-8 col-md-offset-2 " >
+                    <h1>尋找合作對象? 聯絡我們 !</h1>
+                    <h4>如有服務需求及提案需求，請與我們連絡
+                                          </h4>
+                </div>
+            </div>
+            <!-- ./ Main Heading-->
+            <div class="container-fluid bg-grey">
+  <h2 class="text-center">聯絡資訊</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>連握我們 我們有專人24小時為您服務</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>24143新北市三重區中寮街61號</p>
+      <p><span class="glyphicon glyphicon-phone"></span>02-29791388</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> jimmy_hsu@suntitek.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="Name" placeholder="姓名" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="number" name＝"number" placeholder="號碼" type="text" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="Comment" placeholder="內容" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">送出</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- Set height and width with CSS -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(25.057767,121.492996);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+    <!--END CONTACT SECTION --> 
+   
+   
+ 
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        <div class="container">
+            <div class="row ">
+                &copy; 2014 www.yourdomain.com | All Right Reserved 				
+		
+            </div>
+            
+        </div>
+       
+    </div>  
+    <!--END FOOTER SECTION --> 
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY LIBRARY -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- CORE BOOTSTRAP LIBRARY -->
+    <script src="assets/js/bootstrap.min.js"></script>
+       <!-- CUSTOM SCRIPT-->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
